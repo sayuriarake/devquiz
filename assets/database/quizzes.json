@@ -1,0 +1,46 @@
+[
+    {
+        "title": "Quiz Dev",
+        "imagem": "blocks",
+        "level": "facil",
+        "questionAnswered": 1,
+        "questions": [
+            {
+                "title": "O que é git?",
+                "answers": [
+                    {
+                        "title": "É o passado do verbo get em inglês"
+                    },
+                    {
+                        "title": "Um tipo de pasta do computador que pode ter dentro de si outros diretórios e arquivos."
+                    },
+                    {
+                        "title": "Plataforma de hospedagem de código-fonte de uma aplicação com controle de versão "
+                    },
+                    {
+                        "title": "Sistema de Controle de Versão (VCS) distribuído, ou seja, de uso compartilhado por várias pessoas de uma equipe, que faz o acompanhamento de mudanças em arquivos e pastas de uma aplicação.",
+                        "isRight": true
+                    }
+                ]
+            },
+            {
+                "title": "O que significa a sigla NPM?",
+                "answers": [
+                    {
+                        "title": "Não Posso Mais"
+                    },
+                    {
+                        "title": "Node Package Manager",
+                        "isRight": true
+                    },
+                    {
+                        "title": "Not a Person, Man!"
+                    },
+                    {
+                        "title": "Nada Para Mim"
+                    }
+                ]
+            }
+        ]
+    }
+]
