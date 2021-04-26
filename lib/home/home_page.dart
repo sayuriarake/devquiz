@@ -1,3 +1,4 @@
+import 'package:devquiz/challenge/challenge_page.dart';
 import 'package:devquiz/core/app_colors.dart';
 import 'package:devquiz/home/home_controller.dart';
 import 'package:devquiz/home/home_state.dart';
@@ -48,6 +49,7 @@ class _HomePageState extends State<HomePage> {
           ),
           Expanded(
             child: GridView.count(
+              padding: EdgeInsets.symmetric(horizontal: 10),
               crossAxisSpacing: 10,
               mainAxisSpacing: 10,
               crossAxisCount: 2,
@@ -56,7 +58,15 @@ class _HomePageState extends State<HomePage> {
                       title: e.title,
                       completed:
                           "${e.questionAnswered} de ${e.questions.length}",
-                      percent: e.questionAnswered / e.questions.length))
+                      percent: e.questionAnswered / e.questions.length,
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => ChallengePage(
+                                      questions: e.questions,
+                                    )));
+                      }))
                   .toList(),
             ),
           )
